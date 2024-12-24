@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторна робота №1</title>
+</head>
+<body>
+    <header>
+        <h1>Лабораторна робота №1</h1>
+        <h2>Демонстрація елементів HTML</h2>
+    </header>
+
+    <main>
+        <section>
+            <h3>Оформлений текст</h3>
+            <p>Загальна кількість перестановок <i>n</i> елементів дорівнює <b>добутку всіх цілих чисел</b> від <i>1</i> до 
+            <i>n</i>: P<sub>n</sub>:=1&middot;2&middot;3&middot;...&middot;(n-2)&middot;(n-1)</p>
+        </section>
+
+        <section>
+            <h3>Список дисциплін 3-го курсу</h3>
+            <dl>
+                <dt>Функціональне програмування</dt>
+                <dt>Моделювання систем</dt>
+                <dt>Архітектура комп'ютера</dt>
+                <dt>Системне програмне забезпечення</dt>
+                <dt>Internet-технології</dt>
+                <dt>Комп'ютерна схемотехніка</dt>
+                <dt>Психологія управління</dt>
+            </dl>
+        </section>
+
+        <section>
+            <h3>Табличне представлення періодичної системи</h3>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Номер</th>
+                        <th>Елемент</th>
+                        <th>Символ</th>
+                        <th>Атомна маса</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Гідроген</td>
+                        <td>H</td>
+                        <td>1.008</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Гелій</td>
+                        <td>He</td>
+                        <td>4.0026</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Літій</td>
+                        <td>Li</td>
+                        <td>6.94</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h3>Форма введення інформації про комплектуючі ПК</h3>
+            <form action="viacheslav.prokofiev@nure.ua" method="post">
+                <label for="cpu">Процесор:</label>
+                <input type="text" id="cpu" name="cpu"><br>
+
+                <label for="gpu">Відеокарта:</label>
+                <input type="text" id="gpu" name="gpu"><br>
+
+                <label for="ram">Оперативна пам'ять:</label>
+                <input type="text" id="ram" name="ram"><br>
+
+                <label>
+                    <input type="checkbox" name="ssd"> Наявність SSD
+                </label><br>
+
+                <label>
+                    <input type="radio" name="cooling" value="air"> Повітряне охолодження
+                </label>
+                <label>
+                    <input type="radio" name="cooling" value="water"> Водяне охолодження
+                </label><br>
+
+                <label for="brand">Виробник:</label>
+                <select id="brand" name="brand">
+                    <option value="intel">Intel</option>
+                    <option value="amd">AMD</option>
+                    <option value="nvidia">NVIDIA</option>
+                </select><br>
+
+                <button type="submit">Надіслати</button>
+            </form>
+        </section>
+
+        <section>
+            <h3>Мапа зображень</h3>
+            <img src="lb_image.jpg" alt="Університет" usemap="#imagemap" width="1000" height="434">
+            <map name="imagemap">
+                <area shape="rect" coords="0,0,1000,217" href="https://nure.ua/" alt="Сайт університету">
+                <area shape="rect" coords="0,217,500,434" href="https://nure.ua/department/kafedra-elektronnih-obchislyuvalnih-mashin-eom" alt="Сайт кафедри">
+                <area shape="rect" coords="500,217,1000,434" href="https://cist.nure.ua/ias/app/tt/f?p=778:2:4318024747352973::NO:::#" alt="Розклад">
+            </map>
+        </section>
+    </main>
+</body>
+</html>
