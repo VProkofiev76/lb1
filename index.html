@@ -4,6 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Лабораторна робота №1</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -15,25 +26,32 @@
         <section>
             <h3>Оформлений текст</h3>
             <p>Загальна кількість перестановок <i>n</i> елементів дорівнює <b>добутку всіх цілих чисел</b> від <i>1</i> до 
-            <i>n</i>: P<sub>n</sub>:=1&middot;2&middot;3&middot;...&middot;(n-2)&middot;(n-1)</p>
+            <i>n</i>: P<sub>n</sub> := 1&middot;2&middot;3&middot;...&middot;(n-2)&middot;(n-1)</p>
         </section>
 
         <section>
             <h3>Список дисциплін 3-го курсу</h3>
             <dl>
                 <dt>Функціональне програмування</dt>
+                <dd>https://dl.nure.ua/course/view.php?id=24040</dd>
                 <dt>Моделювання систем</dt>
+                <dd>https://dl.nure.ua/course/view.php?id=23977</dd>
                 <dt>Архітектура комп'ютера</dt>
+                <dd>https://dl.nure.ua/course/view.php?id=23985</dd>
                 <dt>Системне програмне забезпечення</dt>
+                <dd>https://dl.nure.ua/course/view.php?id=24015</dd>
                 <dt>Internet-технології</dt>
+                <dd>https://dl.nure.ua/course/view.php?id=23960</dd>
                 <dt>Комп'ютерна схемотехніка</dt>
+                <dd>https://dl.nure.ua/course/view.php?id=24632</dd>
                 <dt>Психологія управління</dt>
+                <dd>https://dl.nure.ua/course/view.php?id=23260</dd>
             </dl>
         </section>
 
         <section>
             <h3>Табличне представлення періодичної системи</h3>
-            <table border="1">
+            <table>
                 <thead>
                     <tr>
                         <th>Номер</th>
@@ -69,13 +87,13 @@
             <h3>Форма введення інформації про комплектуючі ПК</h3>
             <form action="viacheslav.prokofiev@nure.ua" method="post">
                 <label for="cpu">Процесор:</label>
-                <input type="text" id="cpu" name="cpu"><br>
+                <input type="text" id="cpu" name="cpu">
 
                 <label for="gpu">Відеокарта:</label>
-                <input type="text" id="gpu" name="gpu"><br>
+                <input type="text" id="gpu" name="gpu">
 
                 <label for="ram">Оперативна пам'ять:</label>
-                <input type="text" id="ram" name="ram"><br>
+                <input type="text" id="ram" name="ram">
 
                 <label>
                     <input type="checkbox" name="ssd"> Наявність SSD
